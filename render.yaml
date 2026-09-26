@@ -2,7 +2,7 @@ services:
   - type: web
     name: vyro
     runtime: node
-    plan: starter
+    plan: 0.5c-512mb
     buildCommand: npm install --omit=dev
     startCommand: npm start
     healthCheckPath: /api/health
