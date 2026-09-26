@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="VYRO is a new rhythm for short-form video, creators, and culture.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>VYRO — Find your frequency</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="VYRO home"><span class="brand-mark">V</span><span>vyro</span><span class="brand-dot">.</span></a>
+      <button class="mobile-search icon-button" data-action="search" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 4.2 4.2"/></svg></button>
+      <nav class="primary-nav">
+        <p class="nav-label">YOUR SPACE</p>
+        <button class="nav-item active" data-view="home"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M3.5 10.8 12 3.5l8.5 7.3v9.7H14v-6h-4v6H3.5z"/></svg></span><span>For you</span></button>
+        <button class="nav-item" data-view="following"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M16 20v-1.8a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20"/><circle cx="9.5" cy="7" r="3.5"/><path d="M17 11a3.5 3.5 0 0 0 0-7m4 16v-1.8a4 4 0 0 0-3-3.9"/></svg></span><span>Following</span></button>
+        <button class="nav-item" data-view="discover"><span class="nav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.5 5.1-5.1 2.5 2.5-5.1z"/></svg></span><span>Discover</span></button>
+        <p class="nav-label nav-label-spaced">YOUR PEOPLE</p>
+          <button class="nav-item" data-view="inbox"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v13H4z"/><path d="m4.5 7 7.5 6 7.5-6"/></svg></span><span>Messages</span></button>
+          <button class="nav-item" data-view="activity"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></span><span>Activity</span></button>
+        <p class="nav-label nav-label-spaced">YOUR STUDIO</p>
+        <button class="nav-item" data-view="profile"><span class="nav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span><span>My profile</span></button>
+        <button class="nav-item" data-view="studio"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5V14m5 5.5V9m5 10.5V4m5 15.5v-8"/></svg></span><span>Creator studio</span></button>
+        <button class="nav-item" data-view="admin" hidden><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5.1-3.4 8.4-8 10-4.6-1.6-8-4.9-8-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span><span>Admin center</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="theme-switch" data-action="theme"><span class="theme-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span><span>Appearance</span><span class="switch-track"><span></span></span></button>
+        <button class="mini-profile" data-view="profile"><span class="avatar-fallback">?</span><span class="mini-profile-copy"><strong>Guest</strong><small>Sign in to post</small></span></button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">V</span><span>vyro</span><span class="brand-dot">.</span></div>
+        <label class="search-box"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 4.2 4.2"/></svg><input id="globalSearch" type="search" placeholder="Search accounts and videos" autocomplete="off"><kbd>⌘ K</kbd></label>
+        <div class="top-actions"><button class="create-button" data-action="create"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>Create</span></button><button class="icon-button mobile-theme" data-action="theme" aria-label="Toggle appearance"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button><button class="icon-button top-inbox" data-view="inbox" aria-label="Messages"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v13H4z"/><path d="m4.5 7 7.5 6 7.5-6"/></svg></button><button class="user-avatar" data-view="profile" aria-label="Open profile"><span class="avatar-fallback">?</span></button></div>
+      </header>
+      <div id="appView" class="view-root" aria-live="polite"></div>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <button class="mobile-nav-item active" data-view="home" aria-label="For you"><svg viewBox="0 0 24 24"><path d="M3.5 10.8 12 3.5l8.5 7.3v9.7H14v-6h-4v6H3.5z"/></svg></button>
+        <button class="mobile-nav-item" data-view="discover" aria-label="Discover"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.8 8.2-2.5 5.1-5.1 2.5 2.5-5.1z"/></svg></button>
+        <button class="mobile-create" data-action="create" aria-label="Create video"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+        <button class="mobile-nav-item" data-view="inbox" aria-label="Messages"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v13H4z"/><path d="m4.5 7 7.5 6 7.5-6"/></svg></button>
+        <button class="mobile-nav-item" data-view="profile" aria-label="Profile"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></button>
+      </nav>
+    </main>
+    <aside class="right-rail" id="rightRail"></aside>
+  </div>
+  <div id="modalRoot"></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

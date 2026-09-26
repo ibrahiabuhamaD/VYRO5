@@ -1,0 +1,13 @@
+{
+  "name": "VYRO — Find your frequency",
+  "short_name": "VYRO",
+  "description": "A new rhythm for short-form video and creator culture.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#11120f",
+  "theme_color": "#11120f",
+  "icons": [
+    { "src": "assets/vyro-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
